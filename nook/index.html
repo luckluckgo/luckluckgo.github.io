@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nook — 가볍게 메시지를 주고받으세요</title>
+<meta name="description" content="Nook은 전화번호 기반의 가벼운 메신저입니다. 1:1·그룹 채팅, 사진·파일·음성 메시지, 무전(PTT), 멘션, 푸시 알림.">
+<meta property="og:title" content="Nook">
+<meta property="og:description" content="가볍게 메시지를 주고받으세요.">
+<meta property="og:type" content="website">
+<style>
+  :root { --brand:#0D5EB3; --brand-dark:#0A4A8F; --soft:#E8F1FB; --ink:#1b1f24; --muted:#5b6470; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",sans-serif; color:var(--ink); line-height:1.65; }
+  a { color:var(--brand); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .hero { background:linear-gradient(180deg,var(--soft),#fff); text-align:center; padding:72px 20px 48px; }
+  .logo { width:104px; height:104px; border-radius:24px; box-shadow:0 10px 30px rgba(13,94,179,.18); }
+  .hero h1 { font-size:40px; font-weight:800; letter-spacing:-.5px; margin:20px 0 6px; color:var(--brand); }
+  .hero p { font-size:18px; color:var(--muted); margin:0 auto; max-width:520px; }
+  .badge { display:inline-block; margin-top:24px; padding:10px 18px; border-radius:999px; background:var(--brand); color:#fff; font-weight:600; font-size:14px; }
+  .wrap { max-width:880px; margin:0 auto; padding:0 20px; }
+  .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; padding:56px 20px; }
+  .card { background:#fff; border:1px solid #eef1f5; border-radius:16px; padding:22px; }
+  .card .ico { width:42px; height:42px; border-radius:12px; background:var(--soft); color:var(--brand); display:flex; align-items:center; justify-content:center; font-size:22px; margin-bottom:12px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--muted); font-size:14.5px; }
+  footer { border-top:1px solid #eef1f5; padding:34px 20px; text-align:center; color:var(--muted); font-size:14px; }
+  footer a { margin:0 10px; }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <img class="logo" src="nook-logo.png" alt="Nook 로고">
+    <h1>nook</h1>
+    <p>가볍게 메시지를 주고받으세요. 전화번호만 있으면 친구와 바로 대화할 수 있는 심플한 메신저.</p>
+    <div class="badge">App Store 출시 준비 중</div>
+  </header>
+
+  <main class="wrap">
+    <section class="features">
+      <div class="card"><div class="ico">💬</div><h3>1:1 · 그룹 채팅</h3><p>전화번호 기반으로 친구를 찾고, 1:1과 그룹으로 자유롭게 대화하세요.</p></div>
+      <div class="card"><div class="ico">📷</div><h3>사진 · 파일 · 음성</h3><p>사진, 파일, 음성 메시지를 빠르게 주고받습니다.</p></div>
+      <div class="card"><div class="ico">📡</div><h3>무전(PTT) 모드</h3><p>버튼을 꾹 눌러 말하는 무전기 모드로 즉석 음성 전송.</p></div>
+      <div class="card"><div class="ico">🔔</div><h3>실시간 푸시 알림</h3><p>앱이 꺼져 있어도 새 메시지를 바로 알림으로 받습니다.</p></div>
+      <div class="card"><div class="ico">@</div><h3>멘션 · 답장 · 반응</h3><p>@멘션, 답장, 이모지 반응, 메시지 검색·수정까지.</p></div>
+      <div class="card"><div class="ico">⭐️</div><h3>중요 채팅 · 필터</h3><p>중요한 대화에 별을 달고, 전체/별표/그룹으로 필터링.</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a href="privacy.html">개인정보 처리방침</a>·
+      <a href="support.html">지원</a>·
+      <a href="mailto:fidel@fidelx.com">문의</a>
+    </div>
+    <p>© 2026 FidelX. All rights reserved.</p>
+  </footer>
+</body>
+</html>
