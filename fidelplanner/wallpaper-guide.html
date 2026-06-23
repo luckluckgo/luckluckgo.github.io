@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fidel Planner - 잠금화면 배경 만들기 가이드</title>
+<style>
+  :root { --purple:#7c5cf6; --blue:#2563eb; --coral:#ff6b6b; --ink:#1c1c1e; --gray:#6b6b70; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Apple SD Gothic Neo", sans-serif; margin:0; color:var(--ink);
+         line-height:1.7; background:#f5f6fa; }
+  .hero { background:linear-gradient(135deg,#8b5cf6,#2563eb); color:#fff; padding:48px 20px 40px;
+          text-align:center; }
+  .hero h1 { font-size:1.7em; margin:0 0 8px; }
+  .hero p { margin:0; opacity:.92; font-size:1.02em; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px 60px; }
+  .lead { background:#fff; border-radius:18px; padding:20px 22px; margin:26px 0 8px;
+          box-shadow:0 2px 14px rgba(30,20,80,.06); }
+  .lead h2 { margin:.2em 0 .4em; font-size:1.15em; }
+  .note { background:#fff7ed; border:1px solid #fed7aa; border-radius:14px; padding:14px 16px;
+          font-size:.95em; color:#9a3412; margin:18px 0; }
+  h2.sec { font-size:1.35em; margin:48px 0 6px; }
+  h2.sec .tag { display:inline-block; background:var(--purple); color:#fff; font-size:.6em;
+                vertical-align:middle; border-radius:8px; padding:3px 9px; margin-right:8px; }
+  .sub { color:var(--gray); margin:0 0 18px; }
+  .step { display:flex; gap:18px; background:#fff; border-radius:18px; padding:18px 20px; margin:16px 0;
+          box-shadow:0 2px 14px rgba(30,20,80,.06); align-items:flex-start; }
+  .step .num { flex:0 0 auto; width:34px; height:34px; border-radius:50%; background:var(--purple);
+               color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  .step .txt { flex:1; }
+  .step .txt h3 { margin:.1em 0 .3em; font-size:1.05em; }
+  .step .txt p { margin:0; color:var(--gray); font-size:.96em; }
+  .step img { flex:0 0 auto; width:150px; border-radius:14px; border:1px solid #e6e6ee;
+              box-shadow:0 4px 16px rgba(30,20,80,.10); }
+  @media (max-width:560px){ .step{flex-wrap:wrap} .step img{width:46%; margin:0 auto; order:3} }
+  footer { text-align:center; color:#999; font-size:.85em; padding:30px 20px 50px; }
+  a { color:var(--blue); }
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>잠금화면 배경 만들기</h1>
+  <p>이번 달 달력을 잠금화면 배경으로 — 설정 방법과 매일 자동 갱신까지</p>
+</div>
+
+<div class="wrap">
+
+  <div class="lead">
+    <h2>두 가지 방법</h2>
+    <p><b>① 직접 설정</b> — 앱에서 배경 이미지를 만들어 사진에 저장한 뒤 잠금화면으로 지정합니다.<br>
+       <b>② 자동화(단축어)</b> — 매일 정해진 시각에 그날의 달력 배경을 자동으로 만들도록 설정합니다.</p>
+  </div>
+
+  <h2 class="sec"><span class="tag">방법 1</span>직접 만들어 잠금화면에 설정</h2>
+  <p class="sub">가장 간단한 방법입니다. 새 일정이 생기면 다시 만들어 설정하면 됩니다.</p>
+
+  <div class="step">
+    <div class="num">1</div>
+    <div class="txt">
+      <h3>설정 → 잠금화면 배경 만들기</h3>
+      <p>Fidel Planner의 <b>설정</b>을 열고 ‘잠금화면’ 항목의 <b>잠금화면 배경 만들기</b>를 탭합니다.</p>
+    </div>
+    <img src="images/m1_settings.png" alt="설정 화면">
+  </div>
+
+  <div class="step">
+    <div class="num">2</div>
+    <div class="txt">
+      <h3>미리보기 확인 후 사진에 저장</h3>
+      <p>달력 배경 미리보기가 나타납니다. 원하면 <b>배경 사진</b>을 골라 뒤에 깔 수 있습니다.
+         확인했으면 <b>사진에 저장</b>을 탭합니다. (‘일정 색상’은 설정에서 원래 색상/회색톤 선택)</p>
+    </div>
+    <img src="images/m2_make.png" alt="배경 만들기 화면">
+  </div>
+
+  <div class="step">
+    <div class="num">3</div>
+    <div class="txt">
+      <h3>iOS 설정 → 배경화면 → 새로 추가</h3>
+      <p>iOS의 <b>설정</b> 앱을 열고 <b>배경화면</b> → <b>+ 새로운 배경화면 추가</b>를 탭합니다.</p>
+    </div>
+    <img src="images/m3_ios_wallpaper.png" alt="iOS 배경화면 설정">
+  </div>
+
+  <div class="step">
+    <div class="num">4</div>
+    <div class="txt">
+      <h3>저장한 이미지 선택 → 설정</h3>
+      <p>상단에서 <b>사진</b>을 고르고, 방금 저장한 달력 배경 이미지를 선택한 뒤
+         <b>배경화면으로 설정</b>(추가 → 완료)합니다. 잠금화면에 달력이 나타납니다.</p>
+    </div>
+    <img src="images/m4_choose_photo.png" alt="사진 선택">
+  </div>
+
+  <h2 class="sec"><span class="tag">방법 2</span>단축어로 매일 자동 갱신</h2>
+  <p class="sub">단축어 앱으로 ‘오늘 달력 배경 만들기’ 동작을 자동 실행합니다.</p>
+
+  <div class="step">
+    <div class="num">1</div>
+    <div class="txt">
+      <h3>단축어 앱 → 새 단축어 → 동작 추가</h3>
+      <p><b>단축어</b> 앱에서 새 단축어를 만들고 <b>동작 추가</b>를 탭합니다.</p>
+    </div>
+    <img src="images/s1_new.png" alt="새 단축어">
+  </div>
+
+  <div class="step">
+    <div class="num">2</div>
+    <div class="txt">
+      <h3>‘오늘 달력 배경 만들기’ 추가</h3>
+      <p>검색창에 <b>Fidel Planner</b>를 입력하고 <b>오늘 달력 배경 만들기</b> 동작을 선택합니다.
+         원하면 ‘배경 사진’ 입력에 깔고 싶은 사진을 지정할 수 있습니다.</p>
+    </div>
+    <img src="images/s2_search_action.png" alt="동작 검색">
+  </div>
+
+  <div class="step">
+    <div class="num">3</div>
+    <div class="txt">
+      <h3>‘배경화면 설정’ 동작 연결</h3>
+      <p>이어서 <b>배경화면 설정</b> 동작을 추가하고, 입력으로 앞 단계의 결과(이미지)를 연결합니다.</p>
+    </div>
+    <img src="images/s3_set_wallpaper.png" alt="배경화면 설정 연결">
+  </div>
+
+  <div class="note">
+    ⚠️ iOS 버전에 따라 단축어에 <b>‘배경화면 설정’</b> 동작이 없을 수 있습니다.
+    그럴 때는 대신 <b>‘사진 앨범에 저장’</b> 동작을 연결해 매일 자동으로 이미지를 만들어 두고,
+    잠금화면 지정만 방법 1의 3~4단계처럼 직접 해주면 됩니다.
+  </div>
+
+  <div class="step">
+    <div class="num">4</div>
+    <div class="txt">
+      <h3>자동화로 매일 실행</h3>
+      <p>단축어 앱의 <b>자동화</b> 탭 → <b>개인용 자동화 생성</b> → <b>시간대</b>를 ‘매일 오전 7:00’ 등으로 정하고,
+         위에서 만든 단축어를 실행하도록 설정합니다. <b>‘실행 전 묻기’를 꺼야</b> 손대지 않아도 자동으로 갱신됩니다.</p>
+    </div>
+    <img src="images/s4_automation.png" alt="자동화 설정">
+  </div>
+
+  <div class="lead" style="margin-top:34px">
+    <h2>도움이 필요하면</h2>
+    <p>문의: <a href="mailto:fidel@fidelx.com">fidel@fidelx.com</a> ·
+       <a href="index.html">Fidel Planner 지원 페이지</a></p>
+  </div>
+
+</div>
+
+<footer>© 2026 FidelX. All rights reserved.</footer>
+</body>
+</html>
